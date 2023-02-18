@@ -1,0 +1,22 @@
+@media(max-width: 991px){
+  .advantage__wraper{
+    width: 100%;
+  }   
+  .promo__wrapper{
+    align-items: center;
+  } 
+  .header{
+    margin: 0 15px;
+  }
+}
+@media(max-width: 747px){
+  .advantage__wraper{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }   
+
+
+
+}
+

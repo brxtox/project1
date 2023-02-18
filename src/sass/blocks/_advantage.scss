@@ -20,6 +20,17 @@
             font-weight: 300;
             text-align: center;
             line-height: 18px;
+                p{
+                    width: 100%;
+                    color: #0d0d0d;
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-align: center;
+                    line-height: 18px;
+                }
+                &:first-child{
+                    padding-top: 29px;
+                }
             a{
                 color: #ff0000;
                 
@@ -31,6 +42,5 @@
            width: 70px;
             margin: 0 auto;
             margin-bottom: 38px;
-            
         }
 }
