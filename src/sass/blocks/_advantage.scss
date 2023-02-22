@@ -1,6 +1,6 @@
 .advantage{
     background-color: #f6f6f6;
-    height: 470px ;
+    min-height: 470px ;
     padding: 70px 0 75px 0;
         &__wraper{
                 width: 922px;
@@ -42,5 +42,11 @@
            width: 70px;
             margin: 0 auto;
             margin-bottom: 38px;
+        }
+        .icon_text{
+            color: #0d0d0d;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
         }
 }
