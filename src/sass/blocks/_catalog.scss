@@ -36,8 +36,12 @@
         }}
         &__content{
           
-          display: flex;
+          display: none;
           flex-wrap: wrap;
+          &_active{
+            display: flex;
+            justify-content: space-between;
+          }
           
         }
         
@@ -48,9 +52,9 @@
           padding: 20px 20px 26px 20px;
           overflow: hidden;
           margin-bottom: 20px;
-              &:nth-child(3n+1),&:nth-child(3n+2) {
-                margin-right: 20px;
-              }
+              // &:nth-child(3n+1),&:nth-child(3n+2) {
+              //   margin-right: 20px;
+              // }
           &__img{
             display: block;
             margin: 0 auto;
