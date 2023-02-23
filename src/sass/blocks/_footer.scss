@@ -28,7 +28,7 @@
         text-decoration: none;
         line-height: 20px;
         &:hover{
-          color: #5e5d5d;
+          color: #111111;
           
         }
    }
@@ -46,12 +46,13 @@
                   height: 50px;
                 border: 2px solid #ffffff;
                 border-radius: 50%;
+                transition: 0.5s all;
                 img{
                  height: 27px;
 
                 }
                 &:hover{
-                  background:#5e5d5d;
+                  background:#111111;
 
                 }
 

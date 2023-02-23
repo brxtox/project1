@@ -48,6 +48,30 @@ $(document).ready(function(){
       toggleSlide('.catalog-item__link');
       toggleSlide('.catalog-item__list');
     
+      // modal 
+      $('[data-modal=consultation]').on('click', function(){
+          $('.overlay, #consultation').fadeIn('slow');
+        });
+
+          $('.modal__close').on('click', function(){
+            $('.overlay, #consultaion, #thanks, #order').fadeOut('slow');
+
+          });
+
+          $('.button_mini').each(function(i){
+            $(this).on('click', function(){
+              $('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
+              $('.overlay, #order').fadeIn('slow');
+            });
+          });
+          // still not really working 
+          $('.button_submit').on('click', function(){
+            $('#order, #consultation').fadeOut('slow');
+            $('.overlay, #thanks').fadeIn('slow');
+
+          });
+          //
+  
   });
 
  
