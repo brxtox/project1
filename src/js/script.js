@@ -64,14 +64,41 @@ $(document).ready(function(){
               $('.overlay, #order').fadeIn('slow');
             });
           });
-          // still not really working 
-          $('.button_submit').on('click', function(){
-            $('#order, #consultation').fadeOut('slow');
-            $('.overlay, #thanks').fadeIn('slow');
 
-          });
-          //
-  
+    function valideForms(form){
+          $(form).validate({
+            rules: {
+                  name: {
+                    required: true,
+                    minlength: 2
+                  },
+                  phone: "required",
+                  email: {
+                    required: true,
+                    email: true
+                  } 
+                },
+                messages: {
+            name: {
+                    required: "пожалуйста, введите ваще имя.",
+                    minlength: jQuery.validator.format("Требуется не менее {0} символов!")
+              },
+            phone: "пожалуйста, введите свой номер телефона.",
+            email: {
+              required: "пожалуйста, введите свою почту.",
+              email: "Ваш адрес электронной почты должен быть в формате имя@домен.com."
+             }
+          }
+        })
+      };
+    valideForms('#consultation-form');
+    valideForms('#consultation form');
+    valideForms('#order form');
+    
+    $('input[name=phone]').mask("+7(999) 999-99-99");
+
   });
 
- 
+
+
+  
