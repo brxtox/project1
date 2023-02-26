@@ -1,52 +1,57 @@
-.advantage{
-    background-color: #f6f6f6;
-    min-height: 470px ;
-    padding: 70px 0 75px 0;
-        &__wraper{
-                width: 922px;
-                max-height: 231px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 65px;
-        }
-        &__block{
-            display: flex;
-            flex-direction: column;
-            width: 243px;     
-            text-align: center;
-            color: #0d0d0d;
-            font-size: 14px;
-            font-weight: 300;
-            text-align: center;
-            line-height: 18px;
-                p{
-                    width: 100%;
-                    color: #0d0d0d;
-                    font-size: 14px;
-                    font-weight: 300;
-                    text-align: center;
-                    line-height: 18px;
-                }
-                &:first-child{
-                    padding-top: 29px;
-                }
-            a{
-                color: #ff0000;
-                
-            }
-        }
-        &__icon{
-            display: block;
-           height: 70px;
-           width: 70px;
-            margin: 0 auto;
-            margin-bottom: 38px;
-        }
-        .icon_text{
-            color: #0d0d0d;
-            font-size: 18px;
-            font-weight: 700;
-            text-align: center;
-        }
+.advantage {
+  background-color: #f6f6f6;
+  min-height: 470px;
+  padding: 70px 0 75px 0;
+  &__wraper {
+    width: 922px;
+    max-height: 231px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 234px;
+    align-items: center;
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 18px;
+    p {
+      width: 100%;
+      color: #0d0d0d;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      line-height: 18px;
+    }
+    a {
+      color: #ff0000;
+    }
+  }
+  &__icon {
+    display: block;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    &_animated {
+      animation-name: heartbeat;
+      animation-duration: 1.5s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+  .icon_text {
+    color: #0d0d0d;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
 }
